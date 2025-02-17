@@ -10,3 +10,10 @@ cd SilvinhaHealthApp
 
 Entensão PEsquisa react -> ES7+ 
 
+
+salvar via terminal:
+git add nome_arquivo.jr
+git commit -m "Defina a alteração feita com um titulo"
+git push
+
+git status
