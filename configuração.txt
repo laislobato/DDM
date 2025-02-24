@@ -17,3 +17,9 @@ git commit -m "Defina a alteração feita com um titulo"
 git push
 
 git status
+
+ATUALIZAR PACOTES DO NODE
+npm i
+
+executar o prohjeto
+npx expo start --localhost --android
