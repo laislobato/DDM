@@ -18,7 +18,7 @@ git push
 
 git status
 
-ATUALIZAR PACOTES DO NODE
+ATUALIZAR PACOTES DO NODE - fazer isso na pasta \SilvinhaHealthApp
 npm i
 
 executar o prohjeto
