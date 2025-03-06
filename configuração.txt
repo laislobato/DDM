@@ -23,3 +23,9 @@ npm i
 
 executar o prohjeto
 npx expo start --localhost --android
+
+
+- Para iniciar o projeto no celular:
+cd .\SilvinhaHealthApp\
+npm i 
+npx expo start --localhost --android
