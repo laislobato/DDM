@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, TextInput } from 'react-native';
 
 export default function App() {
   return (
@@ -10,9 +10,23 @@ export default function App() {
 
       <View style={styles.content}>
         <Text style={styles.subTitle}>Calculadora de IMC</Text>
-
+          
         <View> 
-          <Text style={styles.label}>Altura</Text>
+          <Text style={styles.label}>Altura:</Text>
+          <TextInput
+            style={styles.input}
+            placeholder='Ex. 1.70'
+            keyboardType='numeric'
+          />
+        </View>
+
+        <View style= {{ marginTop: 25 }}> 
+          <Text style={styles.label}>Peso:</Text>
+          <TextInput
+            style={styles.input}
+            placeholder='Ex. 80.40'
+            keyboardType='numeric'
+          />
         </View>
 
       </View>
@@ -53,14 +67,24 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: '#7A77FC',
     fontWeight: 'bold',
-    marginBottom: 40,
+    marginBottom: 30,
   },
   label: {
-    textAlign: 'center',
     width: '100%',
-    fontSize: 20,
+    fontSize: 18,
     color: '#7A77FC',
     fontWeight: '',
-    marginBottom: 40,
+    marginBottom: 15,
+    marginLeft: 5,
+  },
+  input: {
+    color: '#180902',
+    height: 45,
+    width: '50%',
+    borderColor: '#7A77FC',
+    borderWidth: 1,
+    borderRadius: 5,
+    fontSize: 16,
+    marginBottom: 0,
   },
 });
