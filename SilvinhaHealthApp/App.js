@@ -1,5 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import Ionicons from "@expo/vector-icons/Ionicons";
+
 
 export default function App() {
   return (
@@ -82,17 +84,34 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#7A77FC',
     fontWeight: '',
-    marginBottom: 15,
+    marginBottom: 5,
     marginLeft: 5,
   },
   input: {
     color: '#180902',
     height: 45,
-    width: '50%',
+    width: '100%',
     borderColor: '#7A77FC',
-    borderWidth: 1,
+    borderBottomWidth: 1.5,
     borderRadius: 5,
     fontSize: 16,
     marginBottom: 0,
+  },
+  button: {
+    width:'100%',
+    paddingVertical: 15,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#7A77FC',
+    borderRadius: 20,
+    marginTop: 40,
+    marginBottom: 15,
+  },
+  text: {
+    color: '#ffffff',
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginLeft: 5,
   },
 });
